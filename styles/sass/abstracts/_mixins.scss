@@ -1,0 +1,126 @@
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+// $mobile-SSS: 200px;
+// $mobile-SS: 280px;
+// $mobile-S: 320px;
+// $mobile-M: 375px;
+// $mobile-L: 425px;
+// $tablet: 768px;
+// $laptop: 1024px;
+// $laptop-L: 1440px;
+
+$res_200: "only screen and (min-width: 200px) and (max-width: 279px)";
+$res_280: "only screen and (min-width: 280px) and (max-width: 319px)";
+$res_320: "only screen and (min-width: 320px) and (max-width: 374px)";
+$res_375: "only screen and (min-width: 375px) and (max-width: 424px)";
+$res_425: "only screen and (min-width: 425px) and (max-width: 455px)";
+$res_456: "only screen and (min-width: 456px) and (max-width: 767px)";
+$res_768: "only screen and (min-width: 768px) and (max-width: 991px)";
+$res_992: "only screen and (min-width: 992px) and (max-width: 1023px)";
+$res_1024: "only screen and (min-width: 1024px) and (max-width: 1199px)";
+$res_1200: "only screen and (min-width: 1200px) and (max-width: 1439px)";
+$res_1440: "only screen and (min-width: 1440px) and (max-width: 1649px)";
+$res_1650: "only screen and (min-width: 1650px) and (max-width: 1899px)";
+$res_1900: "only screen and (min-width: 1900px)";
+
+@mixin responsive_200() {
+  @media #{$res_200} {
+    @content;
+  }
+}
+@mixin responsive_280() {
+  @media #{$res_280} {
+    @content;
+  }
+}
+@mixin responsive_320() {
+  @media #{$res_320} {
+    @content;
+  }
+}
+@mixin responsive_375() {
+  @media #{$res_375} {
+    @content;
+  }
+}
+@mixin responsive_425() {
+  @media #{$res_425} {
+    @content;
+  }
+}
+@mixin responsive_456() {
+  @media #{$res_456} {
+    @content;
+  }
+}
+@mixin responsive_768() {
+  @media #{$res_768} {
+    @content;
+  }
+}
+@mixin responsive_992() {
+  @media #{$res_992} {
+    @content;
+  }
+}
+@mixin responsive_1024() {
+  @media #{$res_1024} {
+    @content;
+  }
+}
+@mixin responsive_1200() {
+  @media #{$res_1200} {
+    @content;
+  }
+}
+@mixin responsive_1440() {
+  @media #{$res_1440} {
+    @content;
+  }
+}
+@mixin responsive_1650() {
+  @media #{$res_1650} {
+    @content;
+  }
+}
+
+@mixin responsive_1900() {
+  @media #{$res_1900} {
+    @content;
+  }
+}
+
+// Responsive code for responsive
+// responsive
+@include responsive_200 {
+}
+@include responsive_280 {
+}
+@include responsive_320 {
+}
+
+@include responsive_375 {
+}
+
+@include responsive_425 {
+}
+@include responsive_456 {
+}
+
+@include responsive_768 {
+}
+
+@include responsive_992 {
+}
+
+@include responsive_1024 {
+}
+
+@include responsive_1200 {
+}
+@include responsive_1440 {
+}
+@include responsive_1650 {
+}
+@include responsive_1900 {
+}

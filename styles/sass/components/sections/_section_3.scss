@@ -1,0 +1,189 @@
+.section_3 {
+  @extend Background_image;
+  background-image: url("/4x/asset5.png");
+  //   height: 3800px;
+  width: 100%;
+  padding: 0 10%;
+  &-block1 {
+    @extend Flex_center_spacebetween;
+    &-title {
+      width: 28%;
+      &-group {
+        font-family: AvertaStdCY-Bold;
+        &-main {
+          color: #ccc;
+          font-size: 60px;
+        }
+        &-sub {
+          color: $color-primary;
+          font-size: 60px;
+        }
+      }
+    }
+    &-bos {
+      width: 65%;
+      &-header {
+        @extend Flex_center_spacebetween;
+        &-box {
+          width: 45%;
+        }
+      }
+      &-footer {
+        @extend Flex_start_spacebetween;
+        // margin-top: 40px;
+      }
+    }
+    &-item {
+      width: 100%;
+      &-box {
+        margin-bottom: 40px;
+        &-icon {
+          position: relative;
+          height: 80px;
+          width: 80px;
+        }
+        &-title {
+          font-size: 24px;
+          font-family: AvertaStdCY-Bold;
+          margin: 10px 0;
+        }
+        &-text {
+          font-size: 24px;
+          text-align: justify;
+        }
+      }
+      &-footer {
+        &__a {
+          font-size: 24px;
+          font-family: AvertaStdCY-RegularItalic;
+          width: 45%;
+        }
+        &__b {
+          width: 45%;
+          &-title {
+            font-size: 24px;
+            font-family: AvertaStdCY-Bold;
+            color: $color-primary;
+          }
+          &-btn {
+            margin-top: 15px;
+            width: 80%;
+            padding: 10px;
+            font-size: 22px;
+            border-radius: 28px;
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  &-block2 {
+    &-title {
+      font-size: 45px;
+      font-family: AvertaStdCY-Bold;
+      color: $color-primary;
+      margin: 50px 0;
+    }
+    &-slider {
+      position: relative;
+      &-icon {
+        &-left {
+          position: absolute;
+          width: 27px;
+          height: 50px;
+          top: calc((100% - 60px) / 2);
+          z-index: 10;
+        }
+        &-right {
+          position: absolute;
+          width: 27px;
+          height: 50px;
+          right: 0;
+          top: calc((100% - 60px) / 2);
+          z-index: 10;
+        }
+      }
+      &-slider {
+        margin-left: 80px;
+        margin-right: 40px;
+      }
+      &-item {
+        background-color: $color-white;
+        padding: 5px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 320px;
+        height: 450px;
+        transition: all ease-out 0.3s;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.015);
+          transition: transform ease-out 0.3s;
+        }
+        &-img {
+          @extend Background_image;
+          height: 320px;
+        }
+        &-infor {
+          padding: 15px 10px 10px 10px;
+          &-title {
+            font-family: AvertaStdCY-Bold;
+            text-align: center;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 3px;
+          }
+          &-main {
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  &-block3 {
+    &-title {
+      font-size: 45px;
+      font-family: AvertaStdCY-Bold;
+      text-align: right;
+      color: $color-primary;
+      margin: 50px 0;
+    }
+    &-slider {
+      &-slider {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      &-item {
+        &-img {
+          @extend Background_image;
+          margin-top: 20px;
+          height: 600px;
+          width: 370px;
+          transition: all linear 0.4s;
+        }
+        &-infor {
+          &-title {
+            text-align: center;
+            margin: 20px 0 0 0;
+            font-size: 34px;
+            font-family: AvertaStdCY-RegularItalic;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        &:hover .section_3-block3-slider-item-img {
+          transform: translateY(-10px);
+          transition: transform ease-out 0.4s;
+        }
+        &:hover .section_3-block3-slider-item-infor-title {
+          cursor: pointer;
+          color: $color-primary;
+          transition: 0.2s ease-out;
+        }
+      }
+    }
+  }
+}

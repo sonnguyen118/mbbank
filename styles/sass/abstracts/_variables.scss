@@ -1,0 +1,90 @@
+// Colors
+$color-primary: #292ab6;
+$color-secondary: #4e90e4;
+
+$color-white: #fff;
+$color-black: #000;
+$color-yellow: #ffd749;
+$color-red: #b90101;
+$color-orange: #fa8f00;
+
+$color-banana-yellow: #ebfb00;
+
+$color-bright-red: #f53a39;
+
+$color-grey-light: #efefef;
+$color-grey-dark: #333;
+
+$color-hover: #edf5f8;
+$color-link-hover: #ccc;
+
+$color-paragraph: rgba(0, 0, 0, 0.54);
+
+$color-green: #34eb49;
+
+// Font
+$default-font-size: 1.6rem;
+
+// box shadow
+$default-box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 1px 1px;
+$shopee-box-shadow: 0 1.5px 1.5px 0 rgba(0, 0, 0, 0.1);
+// Grid
+$grid-width: 114rem;
+$gutter-vertical: 4rem;
+$gutter-vertical-small: 2rem;
+$gutter-horizontal: 4rem;
+
+// font
+@font-face {
+  font-family: AvertaStdCY-Bold;
+  src: url(../../fonts/AvertaStdCY-Bold.otf);
+}
+@font-face {
+  font-family: AvertaStdCY-Extrabold;
+  src: url(../../fonts/AvertaStdCY-Extrabold.otf);
+}
+@font-face {
+  font-family: AvertaStdCY-Regular;
+  src: url(../../fonts/AvertaStdCY-Regular.otf);
+}
+@font-face {
+  font-family: AvertaStdCY-RegularItalic;
+  src: url(../../fonts/AvertaStdCY-RegularItalic.otf);
+}
+@font-face {
+  font-family: AvertaStdCY-Semibold;
+  src: url(../../fonts/AvertaStdCY-Semibold.otf);
+}
+
+// Displays
+Flex_center_spacebetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+Flex_start_spacebetween {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+Flex_center {
+  display: flex;
+  align-items: center;
+}
+Flex_end {
+  display: flex;
+  align-items: flex-end;
+}
+Flex_start {
+  display: flex;
+  align-items: flex-start;
+}
+Image_settings {
+  position: relative;
+}
+Background_image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

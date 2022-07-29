@@ -1,0 +1,18 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/utilities";
+
+@import "components/home/main";
+
+@import "components/layout/navbarpc";
+@import "components/layout/footer";
+@import "components/layout/navbarmobile";
+
+@import "components/sections/section_1";
+@import "components/sections/section_2";
+@import "components/sections/section_3";
+@import "components/sections/section_4";
+
+@import "layout/grid";
