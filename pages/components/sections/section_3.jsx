@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Button from "@mui/material/Button";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
@@ -183,12 +182,12 @@ const Section3 = () => {
                 <div className="section_3-block1-item-footer__b-title">
                   Bạn có muốn đăng ký nhận thẻ tại các CN/PGD NV toàn quốc?!{" "}
                 </div>
-                <Button
+                <btn
                   variant="contained"
                   className="section_3-block1-item-footer__b-btn"
                 >
                   ĐĂNG KÝ NHẬN THẺ
-                </Button>
+                </btn>
               </div>
             </div>
           </div>

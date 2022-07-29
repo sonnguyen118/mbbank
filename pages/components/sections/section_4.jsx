@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import TextField from "@mui/material/TextField";
-import Autocomplete from "@mui/material/Autocomplete";
 
 const Section4 = () => {
   const top100Films = [
