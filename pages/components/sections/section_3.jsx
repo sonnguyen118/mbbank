@@ -182,12 +182,9 @@ const Section3 = () => {
                 <div className="section_3-block1-item-footer__b-title">
                   Bạn có muốn đăng ký nhận thẻ tại các CN/PGD NV toàn quốc?!{" "}
                 </div>
-                <btn
-                  variant="contained"
-                  className="section_3-block1-item-footer__b-btn"
-                >
+                <button className="section_3-block1-item-footer__b-btn">
                   ĐĂNG KÝ NHẬN THẺ
-                </btn>
+                </button>
               </div>
             </div>
           </div>

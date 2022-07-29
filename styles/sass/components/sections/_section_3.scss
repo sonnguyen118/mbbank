@@ -2,10 +2,12 @@
   @extend Background_image;
   background-image: url("/4x/asset5.png");
   //   height: 3800px;
+
   width: 100%;
   padding: 0 10%;
   &-block1 {
     @extend Flex_center_spacebetween;
+    margin: 60px 0;
     &-title {
       width: 28%;
       &-group {
@@ -39,8 +41,8 @@
         margin-bottom: 40px;
         &-icon {
           position: relative;
-          height: 80px;
-          width: 80px;
+          height: 90px;
+          width: 90px;
         }
         &-title {
           font-size: 24px;
@@ -72,17 +74,24 @@
             font-size: 22px;
             border-radius: 28px;
             background-color: $color-primary;
+            border: none;
+            color: $color-white;
+            &:hover {
+              cursor: pointer;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
           }
         }
       }
     }
   }
   &-block2 {
+    margin-top: 160px;
     &-title {
-      font-size: 45px;
+      font-size: 55px;
       font-family: AvertaStdCY-Bold;
       color: $color-primary;
-      margin: 50px 0;
+      margin: 50px 0 40px 0;
     }
     &-slider {
       position: relative;
@@ -143,12 +152,13 @@
     }
   }
   &-block3 {
+    margin-top: 200px;
     &-title {
-      font-size: 45px;
+      font-size: 55px;
       font-family: AvertaStdCY-Bold;
       text-align: right;
       color: $color-primary;
-      margin: 50px 0;
+      margin: 50px 0 80px 0;
     }
     &-slider {
       &-slider {
