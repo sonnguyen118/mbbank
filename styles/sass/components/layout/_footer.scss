@@ -1,0 +1,62 @@
+.footer {
+  padding: 30px 10%;
+  @extend Background_image;
+  width: 100%;
+  background-image: url("/4x/footer.png");
+  @extend Flex_start_spacebetween;
+  &-left {
+    &-title {
+      font-size: 28px;
+      color: $color-primary;
+      font-family: AvertaStdCY-Bold;
+      margin-bottom: 20px;
+    }
+    &-group {
+      @extend Flex_start_spacebetween;
+      &-img1 {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      &-img2 {
+        position: relative;
+        width: 378px;
+        height: 120px;
+        margin-left: 20px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &-right {
+    &-social {
+      &-title {
+        @extend Flex_center;
+        justify-content: right;
+        margin-bottom: 12px;
+        &-text {
+          font-size: 26px;
+          color: $color-white;
+          margin-right: 20px;
+        }
+        &-img {
+          position: relative;
+          width: 30px;
+          height: 30px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &-bottom {
+      margin-top: 10px;
+      font-size: 26px;
+      color: $color-white;
+    }
+  }
+}

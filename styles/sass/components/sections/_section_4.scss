@@ -4,16 +4,20 @@
   background-color: #f7fff5;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 10px;
+  padding-bottom: 60px;
   &-information {
-    margin: 20px;
+    margin: 20px 0 50px 0;
     &-title {
       text-align: right;
-      font-size: 20px;
+      font-size: 24px;
       font-family: AvertaStdCY-RegularItalic;
+      margin-right: 10%;
+      padding-top: 50px;
+      margin-bottom: 10px;
     }
     &-group {
       @extend Flex_center_spacebetween;
-      margin: 20px 10%;
+      margin: 0px 10% 30px 10%;
       &-input {
         width: 45%;
         height: 50px;
@@ -46,6 +50,22 @@
         background-position: right 20px top 50%, 0 0;
         background-size: 25px auto, 100%;
       }
+    }
+  }
+  &-button {
+    display: block;
+    margin: 0px auto;
+    background-color: $color-primary;
+    color: $color-white;
+    font-size: 36px;
+    line-height: 40px;
+    padding: 20px 60px;
+    border-radius: 40px;
+    border: none;
+    font-family: AvertaStdCY-Bold;
+    &:hover {
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
   }
 }

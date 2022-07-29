@@ -1,14 +1,21 @@
 .navbarpc {
-  margin: 0 10%;
+  // margin: 0 auto;
+  width: 100%;
   position: fixed;
   @extend Flex_center_spacebetween;
-  width: 80%;
   z-index: 20;
-  padding: 20px 0;
+  padding: 20px 10%;
   &-logo {
     position: relative;
     width: 240px;
     height: 100px;
+    transition: all 0.8s ease-in-out;
+    &-scroll {
+      width: 120px !important;
+      height: 50px !important;
+      position: relative;
+      transition: all 0.8s ease-in-out;
+    }
   }
   &-menu {
     @extend Flex_center_spacebetween;
@@ -16,9 +23,11 @@
     &-title {
       font-size: 28px;
       position: relative;
+      color: $color-primary;
+      font-family: AvertaStdCY-Regular;
       &:hover {
         cursor: pointer;
-        color: $color-primary;
+        color: $color-red;
         transition: 0.2s ease-out;
       }
       &::after {
@@ -28,7 +37,7 @@
         bottom: -2px;
         width: 100%;
         height: 2px;
-        background-color: $color-primary;
+        background-color: $color-red;
         transform: scaleX(0);
         transform-origin: bottom right;
         transition: transform 0.3s ease-out;
@@ -37,6 +46,21 @@
         transform: scaleX(1);
         transform-origin: bottom left;
       }
+      &-scroll {
+        font-size: 24px;
+        color: $color-white;
+        &:hover {
+          color: $color-red;
+        }
+        &::after {
+          background-color: $color-red;
+        }
+      }
     }
+  }
+  // css sroll
+  &-scroll {
+    background-color: $color-primary;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 }

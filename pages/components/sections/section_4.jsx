@@ -59,7 +59,7 @@ const Section4 = () => {
             </select>
           </div>
         </div>
-        <div className="section_4-button"></div>
+        <button className="section_4-button">ĐĂNG KÝ NHẬN THẺ</button>
       </form>
     </>
   );
