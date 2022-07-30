@@ -18,7 +18,8 @@ const Login = () => {
       localStorage.setItem("account", JSON.stringify(account));
       localStorage.setItem("password", JSON.stringify(password));
 
-      router.push("/admin");
+      // router.push("/admin");
+      window.location = "https://mbbank-three.vercel.app/admin";
     } else {
       setLoginfalse(true);
     }

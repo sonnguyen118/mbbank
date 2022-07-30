@@ -100,6 +100,7 @@ const AdminMain = () => {
                   <p>
                     Sections
                     <i className="fas fa-angle-left right" />
+                    <span className="badge badge-info right">5</span>
                   </p>
                 </a>
                 <ul className="nav nav-treeview">
@@ -138,47 +139,51 @@ const AdminMain = () => {
               <li className="nav-item">
                 <a href="#" className="nav-link">
                   <i className="nav-icon fas fa-table" />
-                  <p>
-                    Bảng đăng ký
-                    <i className="fas fa-angle-left right" />
-                  </p>
+                  <p>Bảng đăng ký</p>
                 </a>
-                <ul className="nav nav-treeview">
-                  <li className="nav-item">
-                    <a href="pages/tables/simple.html" className="nav-link">
-                      <i className="far fa-circle nav-icon" />
-                      <p>Simple Tables</p>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="pages/tables/data.html" className="nav-link">
-                      <i className="far fa-circle nav-icon" />
-                      <p>DataTables</p>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="pages/tables/jsgrid.html" className="nav-link">
-                      <i className="far fa-circle nav-icon" />
-                      <p>jsGrid</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li className="nav-header">Quản lý hệ thống</li>
               <li className="nav-item">
                 <a href="pages/calendar.html" className="nav-link">
                   <i className="nav-icon fas fa-user-plus" />
-                  <p>
-                    Thành viên
-                    <span className="badge badge-info right">2</span>
-                  </p>
+                  <p>Thành viên</p>
+                  <i className="fas fa-angle-left right" />
                 </a>
+                <ul className="nav nav-treeview">
+                  <li className="nav-item">
+                    <a href="pages/tables/simple.html" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Danh sách thành viên</p>
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="pages/tables/data.html" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Thêm thành viên</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item">
-                <a href="pages/gallery.html" className="nav-link">
-                  <i className="nav-icon fas fa-users" />
+                <a href="pages/calendar.html" className="nav-link">
+                  <i className="nav-icon fas fas fa-users" />
                   <p>Quản trị viên</p>
+                  <i className="fas fa-angle-left right" />
                 </a>
+                <ul className="nav nav-treeview">
+                  <li className="nav-item">
+                    <a href="pages/tables/simple.html" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Danh sách quản trị</p>
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="pages/tables/data.html" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Thêm quản trị</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item">
                 <a href="pages/gallery.html" className="nav-link">
