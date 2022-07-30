@@ -47,10 +47,10 @@ const Section1 = () => {
       src: "/section_1/section_6.jpg",
     },
   ];
-  console.log(
-    "test",
-    imgArray.map((a, i) => a.src)
-  );
+  // console.log(
+  //   "test",
+  //   imgArray.map((a, i) => a.src)
+  // );
   return (
     <>
       <div>

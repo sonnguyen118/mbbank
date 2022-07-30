@@ -1,0 +1,17 @@
+.admin-main {
+  &-branklink-img {
+    position: relative;
+    height: 36px;
+    width: 36px;
+    margin: 0 10px;
+  }
+  &-imageuser {
+    position: relative;
+    height: 25px;
+    width: 60px;
+    margin: 0 10px;
+  }
+}
+.input-group-append {
+  margin-top: -30px;
+}
