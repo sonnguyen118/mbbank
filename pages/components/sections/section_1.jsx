@@ -21,22 +21,16 @@ const Section1 = () => {
 
   const imgArray = [
     {
-      src: "/section_1/section_1.jpg",
+      src: "/section_1/slide_1_fn.png",
     },
     {
-      src: "/section_1/section_2.jpg",
+      src: "/section_1/slide_1_fn.png",
     },
     {
-      src: "/section_1/section_3.jpg",
+      src: "/section_1/slide_1_fn.png",
     },
     {
-      src: "/section_1/section_4.jpg",
-    },
-    {
-      src: "/section_1/section_5.jpg",
-    },
-    {
-      src: "/section_1/section_6.jpg",
+      src: "/section_1/slide_1_fn.png",
     },
   ];
 

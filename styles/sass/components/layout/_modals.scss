@@ -72,10 +72,10 @@
   .modals {
     height: 80vw;
     width: 60vw;
-    margin-left: 18vw;
-    bottom: 90vw;
+    margin-left: 19vw;
+    bottom: 44vw;
     &-icon {
-      top: 65vw;
+      top: 20vw;
       right: 11vw;
     }
   }
@@ -85,10 +85,10 @@
   .modals {
     height: 80vw;
     width: 60vw;
-    margin-left: 18vw;
-    bottom: 70vw;
+    margin-left: 19vw;
+    bottom: 44vw;
     &-icon {
-      top: 48vw;
+      top: 20vw;
       right: 11vw;
     }
   }
@@ -98,10 +98,10 @@
   .modals {
     height: 80vw;
     width: 60vw;
-    margin-left: 18vw;
-    bottom: 55vw;
+    margin-left: 19vw;
+    bottom: 25vw;
     &-icon {
-      top: 40vw;
+      top: 20vw;
       right: 11vw;
     }
   }
@@ -111,9 +111,9 @@
     height: 80vw;
     width: 60vw;
     margin-left: 19vw;
-    bottom: 45vw;
+    bottom: 20vw;
     &-icon {
-      top: 40vw;
+      top: 20vw;
       right: 11vw;
     }
   }
@@ -121,13 +121,13 @@
 
 @include responsive_768 {
   .modals {
-    height: 80vw;
-    width: 60vw;
-    margin-left: 19vw;
-    bottom: 15vw;
+    height: 66.67vw;
+    width: 50vw;
+    margin-left: 21vw;
+    bottom: 5vw;
     &-icon {
-      top: 15vw;
-      right: 11vw;
+      top: 8vw;
+      right: 15vw;
     }
   }
 }
@@ -135,10 +135,10 @@
 @include responsive_992 {
   .modals {
     margin-left: 10vw;
-    bottom: 30vw;
+    bottom: 18vw;
     &-icon {
-      top: 10vw;
-      right: 11vw;
+      top: 15vw;
+      right: 12vw;
     }
   }
 }
@@ -146,10 +146,10 @@
 @include responsive_1024 {
   .modals {
     margin-left: 10vw;
-    bottom: 30vw;
+    bottom: 18vw;
     &-icon {
-      top: 10vw;
-      right: 11vw;
+      top: 15vw;
+      right: 12vw;
     }
   }
 }
@@ -157,7 +157,7 @@
 @include responsive_1200 {
   .modals {
     margin-left: 10vw;
-    bottom: 23vw;
+    bottom: 15vw;
     &-icon {
       top: 10vw;
       right: 11vw;
@@ -167,19 +167,19 @@
 @include responsive_1440 {
   .modals {
     margin-left: 10vw;
-    bottom: 23vw;
+    bottom: 13vw;
     &-icon {
-      top: 15vw;
-      right: 12vw;
+      top: 11vw;
+      right: 11vw;
     }
   }
 }
 @include responsive_1650 {
   .modals {
     margin-left: 5vw;
-    bottom: 22vw;
+    bottom: 10vw;
     &-icon {
-      top: 12vw;
+      top: 16vw;
       right: 12vw;
     }
   }
