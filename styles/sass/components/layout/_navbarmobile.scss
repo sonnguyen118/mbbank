@@ -164,25 +164,54 @@ label {
     transition: all 0.2s;
   }
 }
+.mobile-container-logo {
+  position: relative;
+  width: 120px;
+  height: 50px;
+  text-align: right;
+  right: -65vw;
+  top: 5px;
+}
 
 // responsive
 
 @include responsive_200 {
+  .mobile-container-logo {
+    right: -35vw;
+  }
 }
 @include responsive_280 {
+  .mobile-container-logo {
+    right: -54vw;
+  }
 }
 @include responsive_320 {
+  .mobile-container-logo {
+    right: -60vw;
+  }
 }
 
 @include responsive_375 {
+  .mobile-container-logo {
+    right: -65vw;
+  }
 }
 
 @include responsive_425 {
+  .mobile-container-logo {
+    right: -68vw;
+  }
 }
 @include responsive_456 {
+  .mobile-container-logo {
+    right: -70vw;
+  }
 }
 
 @include responsive_768 {
+  .mobile-container-logo {
+    right: -80vw;
+  }
 }
 
 @include responsive_992 {

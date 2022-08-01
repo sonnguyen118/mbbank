@@ -6,7 +6,7 @@ import Section2 from "./components/sections/section_2";
 import Section3a from "./components/sections/section_3a";
 import Section3b from "./components/sections/section_3b";
 import Section3c from "./components/sections/section_3c";
-import Section4 from "./components/sections/section_4";
+import Section1MB from "./components/sections/section_1_mobile";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
@@ -66,6 +66,9 @@ export default function Home() {
           <div className="home">
             <div className="home-section-1">
               <Section1 />
+            </div>
+            <div className="home-section-1-mobile">
+              <Section1MB />
             </div>
             <div className="home-section-2">
               <Section2 />

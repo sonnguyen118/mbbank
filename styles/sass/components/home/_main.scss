@@ -11,3 +11,75 @@
     height: 100px;
   }
 }
+
+@include responsive_200 {
+  .home-section-1 {
+    display: none;
+  }
+}
+@include responsive_280 {
+  .home-section-1 {
+    display: none;
+  }
+}
+@include responsive_320 {
+  .home-section-1 {
+    display: none;
+  }
+}
+
+@include responsive_375 {
+  .home-section-1 {
+    display: none;
+  }
+}
+
+@include responsive_425 {
+  .home-section-1 {
+    display: none;
+  }
+}
+@include responsive_456 {
+  .home-section-1 {
+    display: none;
+  }
+}
+
+@include responsive_768 {
+  .home-section-1 {
+    display: none;
+  }
+}
+
+@include responsive_992 {
+  .home-section-1-mobile {
+    display: none;
+  }
+}
+
+@include responsive_1024 {
+  .home-section-1-mobile {
+    display: none;
+  }
+}
+
+@include responsive_1200 {
+  .home-section-1-mobile {
+    display: none;
+  }
+}
+@include responsive_1440 {
+  .home-section-1-mobile {
+    display: none;
+  }
+}
+@include responsive_1650 {
+  .home-section-1-mobile {
+    display: none;
+  }
+}
+@include responsive_1900 {
+  .home-section-1-mobile {
+    display: none;
+  }
+}

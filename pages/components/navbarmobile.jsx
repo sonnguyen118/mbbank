@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const NavbarMobile = () => {
   return (
@@ -21,6 +22,15 @@ const NavbarMobile = () => {
                 </a>
               </li>
             </ul>
+            <div className="mobile-container-logo">
+              <Image
+                src={`/mb-bank-logo.png`}
+                alt="Điện Máy Toàn Cầu"
+                layout="fill"
+                data-testid="close-icon"
+                objectFit="contain"
+              />
+            </div>
           </nav>
         </div>
       </div>
