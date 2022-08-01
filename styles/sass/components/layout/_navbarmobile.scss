@@ -21,7 +21,7 @@ $nav-links: about, products, media, contact us;
   overflow: hidden;
   width: 100%;
   nav {
-    background: #fff;
+    background: rgba(230, 230, 230, 0.479);
     // border-bottom: 1px solid #ddd;
     height: 60px;
     position: relative;
@@ -134,11 +134,11 @@ label {
   border-right: 0 solid transparent;
   cursor: pointer;
   display: block;
-  height: 40px;
+  height: 30px;
   position: absolute;
   top: 12px;
   left: 14px;
-  width: 40px;
+  width: 35px;
   transition: all 0.2s;
   &::before {
     background: $color-primary;
@@ -146,8 +146,8 @@ label {
     height: 4px;
     left: 0;
     position: absolute;
-    top: 13px;
-    width: 40px;
+    top: 9px;
+    width: 35px;
     transition: all 0.2s;
   }
   &::after {
