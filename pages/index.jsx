@@ -77,9 +77,7 @@ export default function Home() {
                 <Section3c />
               </div>
             </div>
-            <div className="home-section-4">
-              <Section4 />
-            </div>
+            <div className="home-section-4">{/* <Section4 /> */}</div>
           </div>
         </Layout>
       </main>

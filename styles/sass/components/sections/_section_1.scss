@@ -9,21 +9,63 @@
 // responsive
 
 @include responsive_200 {
+  .section_1 {
+    &-item {
+      height: 160vw;
+      width: 100vw;
+    }
+  }
 }
 @include responsive_280 {
+  .section_1 {
+    &-item {
+      height: 160vw;
+      width: 100vw;
+    }
+  }
 }
 @include responsive_320 {
+  .section_1 {
+    &-item {
+      height: 160vw;
+      width: 100vw;
+    }
+  }
 }
 
 @include responsive_375 {
+  .section_1 {
+    &-item {
+      height: 160vw;
+      width: 100vw;
+    }
+  }
 }
 
 @include responsive_425 {
+  .section_1 {
+    &-item {
+      height: 160vw;
+      width: 100vw;
+    }
+  }
 }
 @include responsive_456 {
+  .section_1 {
+    &-item {
+      height: 160vw;
+      width: 100vw;
+    }
+  }
 }
 
 @include responsive_768 {
+  .section_1 {
+    &-item {
+      height: 160vw;
+      width: 100vw;
+    }
+  }
 }
 
 @include responsive_992 {

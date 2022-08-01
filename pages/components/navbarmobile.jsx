@@ -16,10 +16,9 @@ const NavbarMobile = () => {
                 <a href="#">Ưu đãi</a>
               </li>
               <li>
-                <a href="#">Khám phá Hi Collection</a>
-              </li>
-              <li>
-                <a href="#">Đăng ký nhận thẻ</a>
+                <a href="#">
+                  Khám phá <br></br>Hi Collection
+                </a>
               </li>
             </ul>
           </nav>

@@ -60,16 +60,6 @@ const NavbarPC = () => {
         >
           Khám phá Hi Collection
         </a>
-        <a
-          href="#section_4"
-          className={
-            navbar
-              ? "navbarpc-menu-title"
-              : "navbarpc-menu-title navbarpc-menu-title-scroll"
-          }
-        >
-          Đăng kí nhận thẻ
-        </a>
       </div>
     </div>
   );
