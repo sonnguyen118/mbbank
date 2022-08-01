@@ -64,3 +64,102 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 }
+
+// responsive
+@include responsive_200 {
+  .navbarpc {
+    display: none;
+  }
+}
+@include responsive_280 {
+  .navbarpc {
+    display: none;
+  }
+}
+@include responsive_320 {
+  .navbarpc {
+    display: none;
+  }
+}
+
+@include responsive_375 {
+  .navbarpc {
+    display: none;
+  }
+}
+
+@include responsive_425 {
+  .navbarpc {
+    display: none;
+  }
+}
+@include responsive_456 {
+  .navbarpc {
+    display: none;
+  }
+}
+
+@include responsive_768 {
+  .navbarpc {
+    display: none;
+  }
+}
+
+@include responsive_992 {
+  .navbarpc {
+    padding: 20px 5%;
+    &-logo {
+      width: 200px;
+      height: 80px;
+    }
+    &-menu {
+      width: 72%;
+      &-title {
+        font-size: 22px;
+        &-scroll {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@include responsive_1024 {
+  .navbarpc {
+    padding: 20px 5%;
+    &-logo {
+      width: 200px;
+      height: 80px;
+    }
+    &-menu {
+      width: 75%;
+      &-title {
+        font-size: 22px;
+        &-scroll {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@include responsive_1200 {
+  .navbarpc {
+    &-logo {
+      width: 200px;
+      height: 80px;
+    }
+    &-menu {
+      &-title {
+        font-size: 22px;
+        &-scroll {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+@include responsive_1440 {
+}
+@include responsive_1650 {
+}

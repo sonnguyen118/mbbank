@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AdminLayout from "../../../components/admin/admin.layout";
 import Link from "next/link";
 
 const Upload = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [repassword, setRepassword] = useState("");
+  const [name, setName] = useState("");
+  const [userpower, setUserpower] = useState("");
   return (
     <AdminLayout>
       <div className="admin-group">

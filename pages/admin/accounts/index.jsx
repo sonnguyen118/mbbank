@@ -1,45 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AdminLayout from "../../components/admin/admin.layout";
 import Link from "next/link";
 
 const Accounts = () => {
-  const listAccount = [
-    {
-      account: "sonnguyen1108",
-      name: "Sơn Nguyễn",
-      mother: "root",
-      power: "Người biên tập",
-      time: "18:00 13/07/1995",
-    },
-    {
-      account: "sonnguyen1108",
-      name: "Sơn Nguyễn",
-      mother: "root",
-      power: "Người biên tập",
-      time: "18:00 13/07/1995",
-    },
-    {
-      account: "sonnguyen1108",
-      name: "Sơn Nguyễn",
-      mother: "root",
-      power: "Người biên tập",
-      time: "18:00 13/07/1995",
-    },
-    {
-      account: "sonnguyen1108",
-      name: "Sơn Nguyễn",
-      mother: "root",
-      power: "Người biên tập",
-      time: "18:00 13/07/1995",
-    },
-    {
-      account: "sonnguyen1108",
-      name: "Sơn Nguyễn",
-      mother: "root",
-      power: "Người biên tập",
-      time: "18:00 13/07/1995",
-    },
-  ];
+  const [listAccounts, setlistAccounts] = useState([]);
+  useEffect(() => {
+    async function getDataAccount() {
+      const apiAccount = `http://localhost:3000/api/getdata-users`;
+      const response = await fetch(apiAccount);
+      const res = await response.json();
+      console.log(res);
+      setlistAccounts(res.results);
+      console.log(listAccounts);
+    }
+    getDataAccount();
+  }, []);
+  console.log(listAccounts, "listAccounts");
   return (
     <AdminLayout>
       <div className="admin__change">
@@ -62,14 +38,14 @@ const Accounts = () => {
               </tr>
             </thead>
             <tbody>
-              {listAccount?.map((listAccount, index) => (
+              {listAccounts?.map((listAccount, index) => (
                 <>
                   <tr>
                     <td>{index + 1}</td>
-                    <td>{listAccount.account}</td>
-                    <td>{listAccount.name}</td>
-                    <td>{listAccount.mother}</td>
-                    <td>{listAccount.power}</td>
+                    <td>{listAccount.user_account}</td>
+                    <td>{listAccount.user_name}</td>
+                    <td>{listAccount.user_mother}</td>
+                    <td>{listAccount.user_power}</td>
                     <td>{listAccount.time}</td>
                     <td>
                       <Link href={"/admin/table/repair"}>
@@ -93,6 +69,7 @@ const Accounts = () => {
                     </a>
                   </Link>
                 </td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>

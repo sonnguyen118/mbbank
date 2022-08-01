@@ -1,0 +1,225 @@
+$nav-links: about, products, media, contact us;
+
+.mobile-wrapper {
+  .mobile-container {
+    border-radius: 20px;
+
+    display: inline-block;
+    height: 520px;
+
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+  }
+}
+
+// Inner mobile canvas
+.content {
+  //   background: aliceblue;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  nav {
+    // background: #fff;
+    // border-bottom: 1px solid #ddd;
+    height: 60px;
+    position: relative;
+  }
+  .nav-links {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    // Dark overlay on open nav
+    &::before {
+      //   background: rgba(0, 0, 0, 0.5);
+      content: "";
+      height: 100vh;
+      left: 0;
+      top: 0;
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      width: 100%;
+      transition: all 0.3s;
+    }
+    li {
+      border-bottom: 1px solid #ddd;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-20px);
+      transition: all 0.3s;
+      a {
+        // background: #fff;
+        color: $color-primary;
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+        padding: 20px 20px;
+        letter-spacing: 2px;
+        text-align: center;
+        width: 100%;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $color-red;
+        }
+      }
+    }
+  }
+}
+
+// Hidden checkbox to triger mobile nav
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  // Nav open styling - achieved with ':checked' selector
+  &:checked + label {
+    border: 4px solid silver;
+    border-radius: 50%;
+    height: 48px;
+    top: 16px;
+    left: 18px;
+    width: 48px;
+    transform: rotate(-135deg);
+    &::before {
+      background: silver;
+      top: 16px;
+      left: 4px;
+      width: 30px;
+    }
+    &::after {
+      background: silver;
+      opacity: 1;
+      top: 16px;
+      left: 4px;
+      visibility: visible;
+      width: 30px;
+    }
+    &:hover {
+      border-color: $color-primary;
+      &::before,
+      &::after {
+        background: $color-primary;
+      }
+    }
+  }
+  &:checked ~ .nav-links {
+    &::before {
+      opacity: 1;
+      visibility: visible;
+    }
+    li {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+
+      @for $i from 1 through length($nav-links) {
+        &:nth-child(#{$i}) {
+          transition-delay: ($i - 1)/10 + s;
+        }
+      }
+    }
+  }
+}
+
+// Styling of the linked label element
+label {
+  background: none transparent;
+  border: 4px solid $color-primary;
+  border-left: 0 solid transparent;
+  border-right: 0 solid transparent;
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  width: 60px;
+  transition: all 0.2s;
+  &::before {
+    background: $color-primary;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    width: 60px;
+    transition: all 0.2s;
+  }
+  &::after {
+    background: $color-primary;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 6px;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    transform: rotate(90deg);
+    transition: all 0.2s;
+  }
+}
+
+// responsive
+
+@include responsive_200 {
+}
+@include responsive_280 {
+}
+@include responsive_320 {
+}
+
+@include responsive_375 {
+}
+
+@include responsive_425 {
+}
+@include responsive_456 {
+}
+
+@include responsive_768 {
+}
+
+@include responsive_992 {
+  .mobile-wrapper,
+  .mobile-container {
+    display: none;
+  }
+}
+
+@include responsive_1024 {
+  .mobile-wrapper,
+  .mobile-container {
+    display: none;
+  }
+}
+
+@include responsive_1200 {
+  .mobile-wrapper,
+  .mobile-container {
+    display: none;
+  }
+}
+@include responsive_1440 {
+  .mobile-wrapper,
+  .mobile-container {
+    display: none;
+  }
+}
+@include responsive_1650 {
+  .mobile-wrapper,
+  .mobile-container {
+    display: none;
+  }
+}
+@include responsive_1900 {
+  .mobile-wrapper,
+  .mobile-container {
+    display: none;
+  }
+}

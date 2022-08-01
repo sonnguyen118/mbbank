@@ -3,14 +3,19 @@ import Image from "next/image";
 import Layout from "./components/layout";
 import Section1 from "./components/sections/section_1";
 import Section2 from "./components/sections/section_2";
-import Section3 from "./components/sections/section_3";
+import Section3a from "./components/sections/section_3a";
+import Section3b from "./components/sections/section_3b";
+import Section3c from "./components/sections/section_3c";
 import Section4 from "./components/sections/section_4";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
+import React, { useEffect } from "react";
 
 export default function Home() {
-  const Section1WithNoSSR = dynamic(import("./components/sections/section_1"), {
-    ssr: false,
-  });
+  const router = useRouter();
+  useEffect(() => {
+    console.log(router.asPath, "router");
+  }, [router.asPath]);
   return (
     <>
       <Head>
@@ -61,14 +66,23 @@ export default function Home() {
       <main>
         <Layout>
           <div className="home">
-            <div className="home-section-1">
+            <div className="home-section-1" id="section_1">
               <Section1 />
             </div>
             <div className="home-section-2">
               <Section2 />
             </div>
-            <div className="home-section-3">
-              <Section3 />
+            <div className="home-section-3" id="section_3">
+              <div className="section_3">
+                <div id="section_3a">
+                  <Section3a />
+                </div>
+                <div id="section_3b"></div>
+                <Section3b />
+              </div>
+              <div id="section_3c">
+                <Section3c />
+              </div>
             </div>
             <div className="home-section-4">
               <Section4 />

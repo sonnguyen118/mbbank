@@ -30,7 +30,8 @@ const NavbarPC = () => {
         />
       </div>
       <div className="navbarpc-menu">
-        <h2
+        <a
+          href="#section_3"
           className={
             navbar
               ? "navbarpc-menu-title"
@@ -38,7 +39,7 @@ const NavbarPC = () => {
           }
         >
           Tiện ích
-        </h2>
+        </a>
         <h2
           className={
             navbar

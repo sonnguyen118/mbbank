@@ -1,7 +1,50 @@
 .section_1 {
   &-item {
     @extend Background_image;
-    height: 90vh;
-    width: 100%;
+    height: 50vw;
+    width: 100vw;
+  }
+}
+
+// responsive
+
+@include responsive_200 {
+}
+@include responsive_280 {
+}
+@include responsive_320 {
+}
+
+@include responsive_375 {
+}
+
+@include responsive_425 {
+}
+@include responsive_456 {
+}
+
+@include responsive_768 {
+}
+
+@include responsive_992 {
+}
+
+@include responsive_1024 {
+}
+
+@include responsive_1200 {
+}
+@include responsive_1440 {
+}
+@include responsive_1650 {
+  .button__bar li button {
+    border: none;
+    background: #bfbfbf;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
   }
 }

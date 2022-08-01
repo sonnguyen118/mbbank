@@ -47,10 +47,7 @@ const Section1 = () => {
       src: "/section_1/section_6.jpg",
     },
   ];
-  // console.log(
-  //   "test",
-  //   imgArray.map((a, i) => a.src)
-  // );
+
   return (
     <>
       <div>
@@ -68,25 +65,5 @@ const Section1 = () => {
     </>
   );
 };
-
-// export async function getServerSideProps(props) {
-//   const Slider = [
-//     "/section_1/section_1.jpg",
-//     "/section_1/section_2.jpg",
-//     "/section_1/section_3.jpg",
-//     "/section_1/section_4.jpg",
-//     "/section_1/section_5.jpg",
-//     "/section_1/section_6.jpg",
-//   ];
-//   // const res = await fetch("https://jsonplaceholder.typicode.com/todos");
-//   // const data = await res.json();
-//   // console.log(data);
-
-//   return {
-//     props: {
-//       Slider,
-//     },
-//   };
-// }
 
 export default Section1;

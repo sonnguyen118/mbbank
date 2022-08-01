@@ -1,0 +1,35 @@
+.modals {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  &-overlay {
+    position: fixed;
+    @extend Background_image;
+    height: 100vh;
+    width: 100%;
+    background-image: url("/4x/backgroun_modals.png");
+  }
+  &-image {
+    @extend Background_image;
+    width: 70vw;
+    height: 35vw;
+    margin: 140px auto 0 auto;
+    position: relative;
+    z-index: 10;
+    border: 2px solid $color-primary;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  &-close {
+    font-size: 60px;
+    position: absolute;
+    right: 13%;
+    top: 115px;
+    color: $color-primary;
+    z-index: 11;
+    &:hover {
+      cursor: pointer;
+      color: $color-red;
+    }
+  }
+}
