@@ -18,14 +18,6 @@ const Section3c = () => {
   const previouss = () => {
     slider.current.slickPrev();
   };
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: false,
-    cssEase: "linear",
-  };
   const settingCards = {
     dots: false,
     infinite: true,
@@ -33,6 +25,30 @@ const Section3c = () => {
     slidesToScroll: 1,
     arrows: false,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 457,
+        settings: {
+          dots: false,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          cssEase: "linear",
+        },
+      },
+      {
+        breakpoint: 376,
+        settings: {
+          dots: false,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          cssEase: "linear",
+        },
+      },
+    ],
   };
   const dataCards = [
     {

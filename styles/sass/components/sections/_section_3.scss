@@ -217,16 +217,1056 @@
 
 // responsive
 @include responsive_200 {
+  .section_3 {
+    background-image: url("/4x/asset5_1440.png");
+    width: 100%;
+    padding: 0 2%;
+    &-block1 {
+      margin: 30px 0;
+      display: block;
+      &-title {
+        width: 100%;
+        margin-bottom: 30px;
+        &-group {
+          font-family: AvertaStdCY-Bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 10px;
+          &-main {
+            color: #ccc;
+            font-size: 24px;
+            margin-right: 10px;
+          }
+          &-sub {
+            color: $color-primary;
+            font-size: 24px;
+            margin-left: 10px;
+          }
+        }
+      }
+      &-bos {
+        width: 80vw;
+        margin: 0 auto;
+
+        &-header {
+          display: block;
+          &-box {
+            width: 100%;
+          }
+        }
+        &-footer {
+          // margin-top: 40px;
+          display: block;
+        }
+      }
+      &-item {
+        &-box {
+          margin-bottom: 40px;
+          &-icon {
+            position: relative;
+            height: 80px;
+            width: 80px;
+            margin: 0 auto;
+          }
+          &-title {
+            font-size: 20px;
+            font-family: AvertaStdCY-Bold;
+            margin: 10px 0;
+          }
+          &-text {
+            font-size: 18px;
+            text-align: justify;
+            &-seemore {
+              font-size: 24px;
+              font-family: AvertaStdCY-RegularItalic;
+              color: $color-primary;
+            }
+          }
+        }
+        &-footer {
+          &__a {
+            font-size: 20px;
+            font-family: AvertaStdCY-RegularItalic;
+            width: 100%;
+          }
+          &__b {
+            width: 100%;
+            &-title {
+              font-size: 20px;
+              font-family: AvertaStdCY-Bold;
+              color: $color-primary;
+            }
+            &-btn {
+              margin-top: 15px;
+              width: 100%;
+              padding: 10px;
+              font-size: 20px;
+              border-radius: 28px;
+              background-color: $color-primary;
+              border: none;
+              color: $color-white;
+              &:hover {
+                cursor: pointer;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-block2 {
+      margin-top: 50px;
+      &-title {
+        font-size: 36px;
+        font-family: AvertaStdCY-Bold;
+        color: $color-primary;
+        text-align: center;
+      }
+      &-slider {
+        position: relative;
+        &-icon {
+          &-left {
+            position: absolute;
+            width: 27px;
+            height: 50px;
+            top: calc((100% - 60px) / 2);
+            z-index: 10;
+          }
+          &-right {
+            position: absolute;
+            width: 27px;
+            height: 50px;
+            right: 0;
+            top: calc((100% - 60px) / 2);
+            z-index: 10;
+          }
+        }
+        &-slider {
+          margin-left: 23%;
+          margin-right: 20%;
+        }
+        &-item {
+          background-color: $color-white;
+          padding: 5px;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          width: 172px;
+          height: 272px;
+          transition: all ease-out 0.3s;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.015);
+            transition: transform ease-out 0.3s;
+          }
+          &-img {
+            height: 172px;
+          }
+          &-infor {
+            padding: 10px;
+            &-title {
+              font-family: AvertaStdCY-Bold;
+              text-align: center;
+              font-size: 16px;
+              line-height: 18px;
+              margin-bottom: 3px;
+            }
+            &-main {
+              font-size: 14px;
+              line-height: 16px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    &-block3 {
+      margin-top: 30px;
+      &-title {
+        font-size: 24px;
+        font-family: AvertaStdCY-Bold;
+        text-align: center;
+        color: $color-primary;
+        margin: 20px 15% 30px 15%;
+      }
+      &-slider {
+        &-slider {
+          margin-left: 28%;
+          margin-right: 20%;
+        }
+        &-item {
+          &-img {
+            margin-top: 20px;
+            height: 312.5px;
+            width: 153.3px;
+            transition: all linear 0.4s;
+          }
+          &-infor {
+            &-title {
+              text-align: center;
+              margin: 20px 0 0 0;
+              font-size: 34px;
+              font-family: AvertaStdCY-RegularItalic;
+            }
+          }
+          &:hover {
+            cursor: pointer;
+          }
+          &:hover .section_3-block3-slider-item-img {
+            transform: translateY(-10px);
+            transition: transform ease-out 0.4s;
+          }
+          &:hover .section_3-block3-slider-item-infor-title {
+            cursor: pointer;
+            color: $color-primary;
+            transition: 0.2s ease-out;
+          }
+        }
+      }
+    }
+  }
 }
 @include responsive_280 {
+  .section_3 {
+    background-image: url("/4x/asset5_1440.png");
+    width: 100%;
+    padding: 0 2%;
+    &-block1 {
+      margin: 30px 0;
+      display: block;
+      &-title {
+        width: 100%;
+        margin-bottom: 30px;
+        &-group {
+          font-family: AvertaStdCY-Bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 10px;
+          &-main {
+            color: #ccc;
+            font-size: 24px;
+            margin-right: 10px;
+          }
+          &-sub {
+            color: $color-primary;
+            font-size: 24px;
+            margin-left: 10px;
+          }
+        }
+      }
+      &-bos {
+        width: 80vw;
+        margin: 0 auto;
+
+        &-header {
+          display: block;
+          &-box {
+            width: 100%;
+          }
+        }
+        &-footer {
+          // margin-top: 40px;
+          display: block;
+        }
+      }
+      &-item {
+        &-box {
+          margin-bottom: 40px;
+          &-icon {
+            position: relative;
+            height: 80px;
+            width: 80px;
+            margin: 0 auto;
+          }
+          &-title {
+            font-size: 20px;
+            font-family: AvertaStdCY-Bold;
+            margin: 10px 0;
+          }
+          &-text {
+            font-size: 18px;
+            text-align: justify;
+            &-seemore {
+              font-size: 24px;
+              font-family: AvertaStdCY-RegularItalic;
+              color: $color-primary;
+            }
+          }
+        }
+        &-footer {
+          &__a {
+            font-size: 20px;
+            font-family: AvertaStdCY-RegularItalic;
+            width: 100%;
+          }
+          &__b {
+            width: 100%;
+            &-title {
+              font-size: 20px;
+              font-family: AvertaStdCY-Bold;
+              color: $color-primary;
+            }
+            &-btn {
+              margin-top: 15px;
+              width: 100%;
+              padding: 10px;
+              font-size: 20px;
+              border-radius: 28px;
+              background-color: $color-primary;
+              border: none;
+              color: $color-white;
+              &:hover {
+                cursor: pointer;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-block2 {
+      margin-top: 50px;
+      &-title {
+        font-size: 36px;
+        font-family: AvertaStdCY-Bold;
+        color: $color-primary;
+        text-align: center;
+      }
+      &-slider {
+        position: relative;
+        &-icon {
+          &-left {
+            position: absolute;
+            width: 27px;
+            height: 50px;
+            top: calc((100% - 60px) / 2);
+            z-index: 10;
+          }
+          &-right {
+            position: absolute;
+            width: 27px;
+            height: 50px;
+            right: 0;
+            top: calc((100% - 60px) / 2);
+            z-index: 10;
+          }
+        }
+        &-slider {
+          margin-left: 23%;
+          margin-right: 20%;
+        }
+        &-item {
+          background-color: $color-white;
+          padding: 5px;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          width: 172px;
+          height: 272px;
+          transition: all ease-out 0.3s;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.015);
+            transition: transform ease-out 0.3s;
+          }
+          &-img {
+            height: 172px;
+          }
+          &-infor {
+            padding: 10px;
+            &-title {
+              font-family: AvertaStdCY-Bold;
+              text-align: center;
+              font-size: 16px;
+              line-height: 18px;
+              margin-bottom: 3px;
+            }
+            &-main {
+              font-size: 14px;
+              line-height: 16px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    &-block3 {
+      margin-top: 30px;
+      &-title {
+        font-size: 24px;
+        font-family: AvertaStdCY-Bold;
+        text-align: center;
+        color: $color-primary;
+        margin: 20px 15% 30px 15%;
+      }
+      &-slider {
+        &-slider {
+          margin-left: 28%;
+          margin-right: 20%;
+        }
+        &-item {
+          &-img {
+            margin-top: 20px;
+            height: 312.5px;
+            width: 153.3px;
+            transition: all linear 0.4s;
+          }
+          &-infor {
+            &-title {
+              text-align: center;
+              margin: 20px 0 0 0;
+              font-size: 34px;
+              font-family: AvertaStdCY-RegularItalic;
+            }
+          }
+          &:hover {
+            cursor: pointer;
+          }
+          &:hover .section_3-block3-slider-item-img {
+            transform: translateY(-10px);
+            transition: transform ease-out 0.4s;
+          }
+          &:hover .section_3-block3-slider-item-infor-title {
+            cursor: pointer;
+            color: $color-primary;
+            transition: 0.2s ease-out;
+          }
+        }
+      }
+    }
+  }
 }
 @include responsive_320 {
+  .section_3 {
+    background-image: url("/4x/asset5_1440.png");
+    width: 100%;
+    padding: 0 2%;
+    &-block1 {
+      margin: 30px 0;
+      display: block;
+      &-title {
+        width: 100%;
+        margin-bottom: 30px;
+        &-group {
+          font-family: AvertaStdCY-Bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 10px;
+          &-main {
+            color: #ccc;
+            font-size: 24px;
+            margin-right: 10px;
+          }
+          &-sub {
+            color: $color-primary;
+            font-size: 24px;
+            margin-left: 10px;
+          }
+        }
+      }
+      &-bos {
+        width: 80vw;
+        margin: 0 auto;
+
+        &-header {
+          display: block;
+          &-box {
+            width: 100%;
+          }
+        }
+        &-footer {
+          // margin-top: 40px;
+          display: block;
+        }
+      }
+      &-item {
+        &-box {
+          margin-bottom: 40px;
+          &-icon {
+            position: relative;
+            height: 80px;
+            width: 80px;
+            margin: 0 auto;
+          }
+          &-title {
+            font-size: 20px;
+            font-family: AvertaStdCY-Bold;
+            margin: 10px 0;
+          }
+          &-text {
+            font-size: 18px;
+            text-align: justify;
+            &-seemore {
+              font-size: 24px;
+              font-family: AvertaStdCY-RegularItalic;
+              color: $color-primary;
+            }
+          }
+        }
+        &-footer {
+          &__a {
+            font-size: 20px;
+            font-family: AvertaStdCY-RegularItalic;
+            width: 100%;
+          }
+          &__b {
+            width: 100%;
+            &-title {
+              font-size: 20px;
+              font-family: AvertaStdCY-Bold;
+              color: $color-primary;
+            }
+            &-btn {
+              margin-top: 15px;
+              width: 100%;
+              padding: 10px;
+              font-size: 20px;
+              border-radius: 28px;
+              background-color: $color-primary;
+              border: none;
+              color: $color-white;
+              &:hover {
+                cursor: pointer;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-block2 {
+      margin-top: 50px;
+      &-title {
+        font-size: 36px;
+        font-family: AvertaStdCY-Bold;
+        color: $color-primary;
+        text-align: center;
+      }
+      &-slider {
+        position: relative;
+        &-icon {
+          &-left {
+            position: absolute;
+            width: 27px;
+            height: 50px;
+            top: calc((100% - 60px) / 2);
+            z-index: 10;
+          }
+          &-right {
+            position: absolute;
+            width: 27px;
+            height: 50px;
+            right: 0;
+            top: calc((100% - 60px) / 2);
+            z-index: 10;
+          }
+        }
+        &-slider {
+          margin-left: 23%;
+          margin-right: 20%;
+        }
+        &-item {
+          background-color: $color-white;
+          padding: 5px;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          width: 172px;
+          height: 272px;
+          transition: all ease-out 0.3s;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.015);
+            transition: transform ease-out 0.3s;
+          }
+          &-img {
+            height: 172px;
+          }
+          &-infor {
+            padding: 10px;
+            &-title {
+              font-family: AvertaStdCY-Bold;
+              text-align: center;
+              font-size: 16px;
+              line-height: 18px;
+              margin-bottom: 3px;
+            }
+            &-main {
+              font-size: 14px;
+              line-height: 16px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    &-block3 {
+      margin-top: 30px;
+      &-title {
+        font-size: 24px;
+        font-family: AvertaStdCY-Bold;
+        text-align: center;
+        color: $color-primary;
+        margin: 20px 15% 30px 15%;
+      }
+      &-slider {
+        &-slider {
+          margin-left: 28%;
+          margin-right: 20%;
+        }
+        &-item {
+          &-img {
+            margin-top: 20px;
+            height: 312.5px;
+            width: 153.3px;
+            transition: all linear 0.4s;
+          }
+          &-infor {
+            &-title {
+              text-align: center;
+              margin: 20px 0 0 0;
+              font-size: 34px;
+              font-family: AvertaStdCY-RegularItalic;
+            }
+          }
+          &:hover {
+            cursor: pointer;
+          }
+          &:hover .section_3-block3-slider-item-img {
+            transform: translateY(-10px);
+            transition: transform ease-out 0.4s;
+          }
+          &:hover .section_3-block3-slider-item-infor-title {
+            cursor: pointer;
+            color: $color-primary;
+            transition: 0.2s ease-out;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include responsive_375 {
+  .section_3 {
+    background-image: url("/4x/asset5_1440.png");
+    width: 100%;
+    padding: 0 2%;
+    &-block1 {
+      margin: 30px 0;
+      display: block;
+      &-title {
+        width: 100%;
+        margin-bottom: 30px;
+        &-group {
+          font-family: AvertaStdCY-Bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 10px;
+          &-main {
+            color: #ccc;
+            font-size: 28px;
+            margin-right: 10px;
+          }
+          &-sub {
+            color: $color-primary;
+            font-size: 28px;
+            margin-left: 10px;
+          }
+        }
+      }
+      &-bos {
+        width: 80vw;
+        margin: 0 auto;
+
+        &-header {
+          display: block;
+          &-box {
+            width: 100%;
+          }
+        }
+        &-footer {
+          // margin-top: 40px;
+          display: block;
+        }
+      }
+      &-item {
+        &-box {
+          margin-bottom: 40px;
+          &-icon {
+            position: relative;
+            height: 80px;
+            width: 80px;
+            margin: 0 auto;
+          }
+          &-title {
+            font-size: 20px;
+            font-family: AvertaStdCY-Bold;
+            margin: 10px 0;
+          }
+          &-text {
+            font-size: 18px;
+            text-align: justify;
+            &-seemore {
+              font-size: 24px;
+              font-family: AvertaStdCY-RegularItalic;
+              color: $color-primary;
+            }
+          }
+        }
+        &-footer {
+          &__a {
+            font-size: 20px;
+            font-family: AvertaStdCY-RegularItalic;
+            width: 100%;
+          }
+          &__b {
+            width: 100%;
+            &-title {
+              font-size: 20px;
+              font-family: AvertaStdCY-Bold;
+              color: $color-primary;
+            }
+            &-btn {
+              margin-top: 15px;
+              width: 100%;
+              padding: 10px;
+              font-size: 20px;
+              border-radius: 28px;
+              background-color: $color-primary;
+              border: none;
+              color: $color-white;
+              &:hover {
+                cursor: pointer;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-block2 {
+      margin-top: 50px;
+      &-title {
+        font-size: 36px;
+        font-family: AvertaStdCY-Bold;
+        color: $color-primary;
+        text-align: center;
+      }
+      &-slider {
+        position: relative;
+        &-icon {
+          &-left {
+            position: absolute;
+            width: 27px;
+            height: 50px;
+            top: calc((100% - 60px) / 2);
+            z-index: 10;
+          }
+          &-right {
+            position: absolute;
+            width: 27px;
+            height: 50px;
+            right: 0;
+            top: calc((100% - 60px) / 2);
+            z-index: 10;
+          }
+        }
+        &-slider {
+          margin-left: 6px;
+          margin-right: 0px;
+        }
+        &-item {
+          background-color: $color-white;
+          padding: 5px;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          width: 172px;
+          height: 272px;
+          transition: all ease-out 0.3s;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.015);
+            transition: transform ease-out 0.3s;
+          }
+          &-img {
+            height: 172px;
+          }
+          &-infor {
+            padding: 10px;
+            &-title {
+              font-family: AvertaStdCY-Bold;
+              text-align: center;
+              font-size: 16px;
+              line-height: 18px;
+              margin-bottom: 3px;
+            }
+            &-main {
+              font-size: 14px;
+              line-height: 16px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    &-block3 {
+      margin-top: 30px;
+      &-title {
+        font-size: 24px;
+        font-family: AvertaStdCY-Bold;
+        text-align: center;
+        color: $color-primary;
+        margin: 20px 15% 30px 15%;
+      }
+      &-slider {
+        &-slider {
+          margin-left: 28%;
+          margin-right: 20%;
+        }
+        &-item {
+          &-img {
+            margin-top: 20px;
+            height: 312.5px;
+            width: 153.3px;
+            transition: all linear 0.4s;
+          }
+          &-infor {
+            &-title {
+              text-align: center;
+              margin: 20px 0 0 0;
+              font-size: 34px;
+              font-family: AvertaStdCY-RegularItalic;
+            }
+          }
+          &:hover {
+            cursor: pointer;
+          }
+          &:hover .section_3-block3-slider-item-img {
+            transform: translateY(-10px);
+            transition: transform ease-out 0.4s;
+          }
+          &:hover .section_3-block3-slider-item-infor-title {
+            cursor: pointer;
+            color: $color-primary;
+            transition: 0.2s ease-out;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include responsive_425 {
+  .section_3 {
+    background-image: url("/4x/asset5_1440.png");
+    width: 100%;
+    padding: 0 2%;
+    &-block1 {
+      margin: 30px 0;
+      display: block;
+      &-title {
+        width: 100%;
+        margin-bottom: 30px;
+        &-group {
+          font-family: AvertaStdCY-Bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 10px;
+          &-main {
+            color: #ccc;
+            font-size: 35px;
+            margin-right: 20px;
+          }
+          &-sub {
+            color: $color-primary;
+            font-size: 35px;
+            margin-left: 30px;
+          }
+        }
+      }
+      &-bos {
+        width: 80vw;
+        margin: 0 auto;
+
+        &-header {
+          display: block;
+          &-box {
+            width: 100%;
+          }
+        }
+        &-footer {
+          // margin-top: 40px;
+          display: block;
+        }
+      }
+      &-item {
+        &-box {
+          margin-bottom: 40px;
+          &-icon {
+            position: relative;
+            height: 80px;
+            width: 80px;
+            margin: 0 auto;
+          }
+          &-title {
+            font-size: 20px;
+            font-family: AvertaStdCY-Bold;
+            margin: 10px 0;
+          }
+          &-text {
+            font-size: 18px;
+            text-align: justify;
+            &-seemore {
+              font-size: 24px;
+              font-family: AvertaStdCY-RegularItalic;
+              color: $color-primary;
+            }
+          }
+        }
+        &-footer {
+          &__a {
+            font-size: 20px;
+            font-family: AvertaStdCY-RegularItalic;
+            width: 100%;
+          }
+          &__b {
+            width: 100%;
+            &-title {
+              font-size: 20px;
+              font-family: AvertaStdCY-Bold;
+              color: $color-primary;
+            }
+            &-btn {
+              margin-top: 15px;
+              width: 100%;
+              padding: 10px;
+              font-size: 20px;
+              border-radius: 28px;
+              background-color: $color-primary;
+              border: none;
+              color: $color-white;
+              &:hover {
+                cursor: pointer;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-block2 {
+      margin-top: 50px;
+      &-title {
+        font-size: 40px;
+        font-family: AvertaStdCY-Bold;
+        color: $color-primary;
+        text-align: center;
+      }
+      &-slider {
+        position: relative;
+        &-icon {
+          &-left {
+            position: absolute;
+            width: 27px;
+            height: 50px;
+            top: calc((100% - 60px) / 2);
+            z-index: 10;
+          }
+          &-right {
+            position: absolute;
+            width: 27px;
+            height: 50px;
+            right: 0;
+            top: calc((100% - 60px) / 2);
+            z-index: 10;
+          }
+        }
+        &-slider {
+          margin-left: 20px;
+          margin-right: 0px;
+        }
+        &-item {
+          background-color: $color-white;
+          padding: 5px;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          width: 190px;
+          height: 300px;
+          transition: all ease-out 0.3s;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.015);
+            transition: transform ease-out 0.3s;
+          }
+          &-img {
+            height: 210px;
+          }
+          &-infor {
+            padding: 10px;
+            &-title {
+              font-family: AvertaStdCY-Bold;
+              text-align: center;
+              font-size: 22px;
+              line-height: 24px;
+              margin-bottom: 3px;
+            }
+            &-main {
+              font-size: 18px;
+              line-height: 20px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    &-block3 {
+      margin-top: 50px;
+      &-title {
+        font-size: 30px;
+        font-family: AvertaStdCY-Bold;
+        text-align: right;
+        color: $color-primary;
+        margin: 20px 5vw 30px 0;
+      }
+      &-slider {
+        &-slider {
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+        &-item {
+          &-img {
+            margin-top: 20px;
+            height: 312.5px;
+            width: 153.3px;
+            transition: all linear 0.4s;
+          }
+          &-infor {
+            &-title {
+              text-align: center;
+              margin: 20px 0 0 0;
+              font-size: 34px;
+              font-family: AvertaStdCY-RegularItalic;
+            }
+          }
+          &:hover {
+            cursor: pointer;
+          }
+          &:hover .section_3-block3-slider-item-img {
+            transform: translateY(-10px);
+            transition: transform ease-out 0.4s;
+          }
+          &:hover .section_3-block3-slider-item-infor-title {
+            cursor: pointer;
+            color: $color-primary;
+            transition: 0.2s ease-out;
+          }
+        }
+      }
+    }
+  }
 }
 @include responsive_456 {
   .section_3 {
@@ -260,24 +1300,26 @@
       &-bos {
         width: 80vw;
         margin: 0 auto;
+
         &-header {
+          display: block;
           &-box {
-            width: 45%;
+            width: 100%;
           }
         }
         &-footer {
           // margin-top: 40px;
+          display: block;
         }
       }
       &-item {
-        width: 100%;
         &-box {
-          width: 100%;
           margin-bottom: 40px;
           &-icon {
             position: relative;
             height: 80px;
             width: 80px;
+            margin: 0 auto;
           }
           &-title {
             font-size: 20px;
@@ -298,10 +1340,10 @@
           &__a {
             font-size: 20px;
             font-family: AvertaStdCY-RegularItalic;
-            width: 45%;
+            width: 100%;
           }
           &__b {
-            width: 45%;
+            width: 100%;
             &-title {
               font-size: 20px;
               font-family: AvertaStdCY-Bold;
@@ -309,7 +1351,7 @@
             }
             &-btn {
               margin-top: 15px;
-              width: 80%;
+              width: 100%;
               padding: 10px;
               font-size: 20px;
               border-radius: 28px;
@@ -326,13 +1368,12 @@
       }
     }
     &-block2 {
-      margin-top: 90px;
+      margin-top: 50px;
       &-title {
         font-size: 40px;
         font-family: AvertaStdCY-Bold;
         color: $color-primary;
-        margin: 20px 0 40px 0;
-        padding-left: 8vw;
+        text-align: center;
       }
       &-slider {
         position: relative;
@@ -355,15 +1396,15 @@
         }
         &-slider {
           margin-left: 20px;
-          margin-right: 20px;
+          margin-right: 0px;
         }
         &-item {
           background-color: $color-white;
           padding: 5px;
           border-bottom-left-radius: 15px;
           border-bottom-right-radius: 15px;
-          width: 210px;
-          height: 330px;
+          width: 190px;
+          height: 300px;
           transition: all ease-out 0.3s;
           &:hover {
             cursor: pointer;
@@ -392,14 +1433,13 @@
       }
     }
     &-block3 {
-      margin-top: 100px;
+      margin-top: 50px;
       &-title {
-        font-size: 40px;
-
+        font-size: 30px;
         font-family: AvertaStdCY-Bold;
         text-align: right;
         color: $color-primary;
-        margin: 50px 5vw 80px 0;
+        margin: 20px 5vw 30px 0;
       }
       &-slider {
         &-slider {

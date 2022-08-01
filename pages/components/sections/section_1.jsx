@@ -18,15 +18,7 @@ const Section1 = () => {
     dotsClass: styles.button__bar,
   };
   console.log("rendering....");
-  // const Slider = [
-  //   "/section_1/section_1.jpg",
-  //   "/section_1/section_2.jpg",
-  //   "/section_1/section_3.jpg",
-  //   "/section_1/section_4.jpg",
-  //   "/section_1/section_5.jpg",
-  //   "/section_1/section_6.jpg",
-  // ];
-  // console.log("rendering....", Slider);
+
   const imgArray = [
     {
       src: "/section_1/section_1.jpg",
