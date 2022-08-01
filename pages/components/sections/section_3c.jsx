@@ -1,8 +1,10 @@
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import Router from "next/router";
+import $ from "jquery";
+import { typeOf } from "tls";
 
 const Section3c = () => {
   const slider = useRef();
@@ -92,6 +94,44 @@ const Section3c = () => {
       modal: "/4x/modal.jpg",
     },
   ];
+
+  const [close, setClose] = useState(false);
+  const closeWhenClick = () => {
+    setClose(true);
+    console.log("da click the item");
+    console.log(close);
+  };
+  useEffect(function mount() {
+    const count = dataCards.length;
+    var i = 1;
+    const overlay = $(".modals-overlay");
+    for (i = 0; i < count; i++) {
+      const item = $("." + i);
+      // console.log(item);
+      item.click(function () {
+        console.log(item.css("display"));
+        item.css("display", "block");
+        overlay.css("display", "block");
+        // setClose(true);
+        console.log(close);
+      });
+    }
+  }, []);
+  //   const ClickItem = $(".section_3-block3-slider-item-img");
+  //   ClickItem.click(function () {
+  //     console.log("okebabay", $(this).next());
+  //     $(this).next().css("visibility", "visible");
+  //   });
+
+  useEffect(function mount() {
+    const modalOverlays = $(".modals-overlay");
+    const popub = $(".modals");
+    var i = 0;
+    modalOverlays.click(function () {
+      popub.parent().css("display", "none");
+      modalOverlays.css("display", "none");
+    });
+  }, []);
   return (
     <div className="section_3-block3" id="section_3c">
       <h1 className="section_3-block3-title">
@@ -123,12 +163,7 @@ const Section3c = () => {
         >
           {dataCards.map((data, index) => (
             <>
-              <Link
-                href={{
-                  pathname: "/modals/meme",
-                  query: { keyword: data.modal },
-                }}
-              >
+              <div className={index} onClick={closeWhenClick}>
                 <div className="section_3-block3-slider-item">
                   <div
                     className="section_3-block3-slider-item-img"
@@ -140,10 +175,23 @@ const Section3c = () => {
                     </p>
                   </div>
                 </div>
-              </Link>
+              </div>
             </>
           ))}
         </Slider>
+        <div className="modals-overlay">
+          <i className="modals-icon fas fa-times-circle"></i>
+        </div>
+        {dataCards.map((data, index) => (
+          <>
+            <div className={index} id="popub">
+              <div
+                className="modals"
+                style={{ backgroundImage: `url(${data.modal})` }}
+              ></div>
+            </div>
+          </>
+        ))}
       </div>
     </div>
   );

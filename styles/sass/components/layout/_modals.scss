@@ -1,35 +1,196 @@
+#popub {
+  display: none;
+}
+
 .modals {
-  height: 100vh;
-  width: 100%;
+  height: 35vw;
+  width: 70vw;
+  left: auto;
+  right: auto;
+  background-color: red;
   position: fixed;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  bottom: 3vw;
+  z-index: 10;
+  @extend Background_image;
   &-overlay {
-    position: fixed;
-    @extend Background_image;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
     height: 100vh;
-    width: 100%;
-    background-image: url("/4x/backgroun_modals.png");
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
   }
-  &-image {
-    @extend Background_image;
-    width: 70vw;
-    height: 35vw;
-    margin: 140px auto 0 auto;
-    position: relative;
-    z-index: 10;
-    border: 2px solid $color-primary;
-    border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-  &-close {
+  &-icon {
     font-size: 60px;
-    position: absolute;
-    right: 13%;
-    top: 115px;
     color: $color-primary;
-    z-index: 11;
+    z-index: 2;
+    position: fixed;
+    right: 20vw;
+    top: 0px;
+    z-index: 200;
     &:hover {
       cursor: pointer;
       color: $color-red;
+    }
+  }
+}
+
+.section_3-block3-slider-item:focus {
+  border: 1px solid #ccc;
+}
+
+@include responsive_200 {
+  .modals {
+    height: 80vw;
+    width: 60vw;
+    margin-left: 18vw;
+    bottom: 90vw;
+    &-icon {
+      top: 65vw;
+      right: 11vw;
+    }
+  }
+}
+@include responsive_280 {
+  .modals {
+    height: 80vw;
+    width: 60vw;
+    margin-left: 18vw;
+    bottom: 90vw;
+    &-icon {
+      top: 65vw;
+      right: 11vw;
+    }
+  }
+}
+@include responsive_320 {
+  .modals {
+    height: 80vw;
+    width: 60vw;
+    margin-left: 18vw;
+    bottom: 90vw;
+    &-icon {
+      top: 65vw;
+      right: 11vw;
+    }
+  }
+}
+
+@include responsive_375 {
+  .modals {
+    height: 80vw;
+    width: 60vw;
+    margin-left: 18vw;
+    bottom: 70vw;
+    &-icon {
+      top: 48vw;
+      right: 11vw;
+    }
+  }
+}
+
+@include responsive_425 {
+  .modals {
+    height: 80vw;
+    width: 60vw;
+    margin-left: 18vw;
+    bottom: 55vw;
+    &-icon {
+      top: 40vw;
+      right: 11vw;
+    }
+  }
+}
+@include responsive_456 {
+  .modals {
+    height: 80vw;
+    width: 60vw;
+    margin-left: 19vw;
+    bottom: 45vw;
+    &-icon {
+      top: 40vw;
+      right: 11vw;
+    }
+  }
+}
+
+@include responsive_768 {
+  .modals {
+    height: 80vw;
+    width: 60vw;
+    margin-left: 19vw;
+    bottom: 15vw;
+    &-icon {
+      top: 15vw;
+      right: 11vw;
+    }
+  }
+}
+
+@include responsive_992 {
+  .modals {
+    margin-left: 10vw;
+    bottom: 30vw;
+    &-icon {
+      top: 10vw;
+      right: 11vw;
+    }
+  }
+}
+
+@include responsive_1024 {
+  .modals {
+    margin-left: 10vw;
+    bottom: 30vw;
+    &-icon {
+      top: 10vw;
+      right: 11vw;
+    }
+  }
+}
+
+@include responsive_1200 {
+  .modals {
+    margin-left: 10vw;
+    bottom: 23vw;
+    &-icon {
+      top: 10vw;
+      right: 11vw;
+    }
+  }
+}
+@include responsive_1440 {
+  .modals {
+    margin-left: 10vw;
+    bottom: 23vw;
+    &-icon {
+      top: 15vw;
+      right: 12vw;
+    }
+  }
+}
+@include responsive_1650 {
+  .modals {
+    margin-left: 5vw;
+    bottom: 22vw;
+    &-icon {
+      top: 12vw;
+      right: 12vw;
+    }
+  }
+}
+@include responsive_1900 {
+  .modals {
+    margin-left: 5vw;
+    bottom: 5vw;
+    &-icon {
+      top: 7vw;
+      right: 12vw;
     }
   }
 }

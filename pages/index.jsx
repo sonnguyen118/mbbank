@@ -9,11 +9,22 @@ import Section3c from "./components/sections/section_3c";
 import Section1MB from "./components/sections/section_1_mobile";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
-import React, { useEffect } from "react";
+import React, { Component, useRef, useEffect } from "react";
+
+const useMountEffect = (fun) => useEffect(fun, []);
 
 export default function Home() {
   const router = useRouter();
+  console.log(router.asPath);
+  const myRef = useRef(null);
 
+  const executeScroll = () => myRef.current.scrollIntoView(); // run this function from an event handler or pass it to useEffect to execute scroll
+
+  useEffect(() => {
+    if (router.asPath == "#section_3c") {
+      executeScroll();
+    }
+  });
   return (
     <>
       <Head>
@@ -73,7 +84,7 @@ export default function Home() {
             <div className="home-section-2">
               <Section2 />
             </div>
-            <div className="home-section-3">
+            <div ref={myRef} className="home-section-3">
               <div className="section_3">
                 <Section3a />
                 <Section3b />
