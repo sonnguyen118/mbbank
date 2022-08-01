@@ -7,8 +7,7 @@ const Modals = () => {
   const router = useRouter();
   console.log(router.query);
   const goBack = () => {
-    window.history.back();
-    window.scroll(0, 200);
+    router.push("/#section_3c");
   };
   return (
     <>

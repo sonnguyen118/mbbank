@@ -31,7 +31,7 @@ const NavbarPC = () => {
       </div>
       <div className="navbarpc-menu">
         <a
-          href="#section_3"
+          href="#section_3a"
           className={
             navbar
               ? "navbarpc-menu-title"
@@ -40,7 +40,8 @@ const NavbarPC = () => {
         >
           Tiện ích
         </a>
-        <h2
+        <a
+          href="#section_3b"
           className={
             navbar
               ? "navbarpc-menu-title"
@@ -48,8 +49,9 @@ const NavbarPC = () => {
           }
         >
           Ưu đãi
-        </h2>
-        <h2
+        </a>
+        <a
+          href="#section_3c"
           className={
             navbar
               ? "navbarpc-menu-title"
@@ -57,8 +59,9 @@ const NavbarPC = () => {
           }
         >
           Khám phá Hi Collection
-        </h2>
-        <h2
+        </a>
+        <a
+          href="#section_4"
           className={
             navbar
               ? "navbarpc-menu-title"
@@ -66,7 +69,7 @@ const NavbarPC = () => {
           }
         >
           Đăng kí nhận thẻ
-        </h2>
+        </a>
       </div>
     </div>
   );

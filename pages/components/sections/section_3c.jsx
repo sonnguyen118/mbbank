@@ -77,7 +77,7 @@ const Section3c = () => {
     },
   ];
   return (
-    <div className="section_3-block3">
+    <div className="section_3-block3" id="section_3c">
       <h1 className="section_3-block3-title">
         Khám phá bộ sưu tập Hi Collection
       </h1>

@@ -14,7 +14,7 @@ const Section3a = () => {
     }
   };
   return (
-    <div className="section_3-block1">
+    <div className="section_3-block1" id="section_3a">
       <div className="section_3-block1-title">
         <div className="section_3-block1-title-group">
           <h1 className="section_3-block1-title-group-main">Giao dịch</h1>

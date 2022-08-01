@@ -14,7 +14,7 @@ const Section4 = () => {
   ];
   return (
     <>
-      <form className="section_4">
+      <form className="section_4" id="section_4">
         <div className="section_4-information">
           <p className="section_4-information-title">
             Địa chỉ đăng ký nhận thẻ:

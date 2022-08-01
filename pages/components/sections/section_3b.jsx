@@ -24,6 +24,34 @@ const Section3b = () => {
     slidesToScroll: 1,
     arrows: false,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          dots: false,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          cssEase: "linear",
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   const settingCards = {
     dots: false,
@@ -62,7 +90,7 @@ const Section3b = () => {
   ];
 
   return (
-    <div className="section_3-block2">
+    <div className="section_3-block2" id="section_3b">
       <h1 className="section_3-block2-title">Ưu đãi bất tận</h1>
       <div className="section_3-block2-slider">
         <div className="section_3-block2-slider-icon-left" onClick={previous}>

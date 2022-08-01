@@ -13,9 +13,7 @@ import React, { useEffect } from "react";
 
 export default function Home() {
   const router = useRouter();
-  useEffect(() => {
-    console.log(router.asPath, "router");
-  }, [router.asPath]);
+
   return (
     <>
       <Head>
@@ -66,21 +64,16 @@ export default function Home() {
       <main>
         <Layout>
           <div className="home">
-            <div className="home-section-1" id="section_1">
+            <div className="home-section-1">
               <Section1 />
             </div>
             <div className="home-section-2">
               <Section2 />
             </div>
-            <div className="home-section-3" id="section_3">
+            <div className="home-section-3">
               <div className="section_3">
-                <div id="section_3a">
-                  <Section3a />
-                </div>
-                <div id="section_3b"></div>
+                <Section3a />
                 <Section3b />
-              </div>
-              <div id="section_3c">
                 <Section3c />
               </div>
             </div>
